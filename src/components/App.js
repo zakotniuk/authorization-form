@@ -23,21 +23,16 @@ const App = () => {
  
   return (
     <div className='content'>
-      
-      
       {success ? (
         <Success />
       )
       :(
         <>
           <SignIn open={open} handleSubmit={handleSubmit} handleSuccess={handleSuccess}/>
-          <SignUp open={open} handleSubmit={handleSubmit} />
+          <SignUp open={open} handleSubmit={handleSubmit} handleSuccess={handleSuccess}/>
         </>
       )
       }
-      
-      
-      
     </div>
   );
 }
