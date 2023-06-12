@@ -1,5 +1,5 @@
-This is form for sign in/sign up made in React.
-Problems with I faced:
+### This is form for sign in/sign up made in React.
+#### Problems with I faced:
 1.
 2.
 3.
