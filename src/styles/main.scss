@@ -1,0 +1,161 @@
+
+*{
+    margin: 0;
+}
+
+.content{
+    height: 100vh;
+    background: #3B4465;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background: white;
+    animation: show_block 0.5s cubic-bezier(0.25, 0.75, 0.5, 1.25);
+    
+
+    h1{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #8F9A9F;
+    }
+}
+
+.hide{
+    display: none;
+    
+}
+
+.input_div{
+    display: block;
+
+    label{
+        font-weight: 400;
+        font-size: 16px;
+        color: #8F9A9F;
+        display: block;
+    }
+
+    input{
+        min-width: 260px;
+        margin-top: 5px;
+        height: 50px;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0px 10px;
+        background: #EEF9FE;
+        border: 1px solid #D3E1E7;
+        border-radius: 5px;
+        
+    }
+    *:focus {
+        outline: none;
+    }
+
+  
+
+    .error{
+        border: 1px solid #ff0000;
+    }
+
+    #error_message{
+        margin-top: 5px;
+        font-size: 14px;
+        color:#ff0000;
+    }
+}
+
+.password{
+    margin-top: 20px;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    background: #A7E245;
+    border-radius: 100px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: 0.5s;
+
+    
+}
+
+.btn:hover{
+    background: white;
+    color:#A7E245;
+    border: solid 2px #A7E245;
+}
+
+.btn_signup {
+    padding-top: 10px;
+    a{
+        color: #8F9A9F;
+        text-decoration: none;
+    }
+}
+
+.success_block {
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    animation: show_block 0.5s cubic-bezier(0.25, 0.75, 0.5, 1.25);
+    color: #8F9A9F;
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    h3 {
+        font-weight: 400;
+      font-size: 24px;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    button {
+      width: 200px;
+    }
+  }
+
+  @keyframes show_block {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
